@@ -20,4 +20,21 @@ Calculator.prototype.pingPong = function(goal) {
   return output;
 };
 
+Calculator.prototype.add = function(firstNumber, secondNumber) {
+    return (firstNumber + secondNumber);
+};
+
+Calculator.prototype.subtract = function(firstNumber, secondNumber) {
+    return (firstNumber - secondNumber);
+};
+
+Calculator.prototype.multiply = function(firstNumber, secondNumber) {
+    return (firstNumber * secondNumber);
+};
+
+Calculator.prototype.divide = function(firstNumber, secondNumber) {
+    return (firstNumber / secondNumber);
+};
+
+
 exports.calculatorModule = Calculator;
