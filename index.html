@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <form id="signup">
-      <label for="email">Enter your email:</label>
-      <input id="email" type="text">
-      <button type="submit">Submit</button>
-    </form>
-    <form id="math-types-form">
-      <label for="math1">Enter your first number:</label>
-      <input id="math1" type="number">
+    <div class="container">
+      <h1>Ping Pong!</h1>
+      <form id="ping-pong-form">
+        <label for="goal">Enter a number:</label>
+        <input id="goal" type="number">
+        <button class="btn-success" type="submit">Submit</button>
+      </form>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button class="btn-success" type="submit">Submit</button>
+      </form>
+      <form id="math-types-form">
+        <label for="math1">Enter your first number:</label>
+        <input id="math1" type="number">
 
-      <select id="operator">
-        <option value="add">add</option>
-        <option value="subtract">subtract</option>
-        <option value="multiply">multiply</option>
-        <option value="divide">divide</option>
-      </select>
+        <select id="operator">
+          <option value="add">add</option>
+          <option value="subtract">subtract</option>
+          <option value="multiply">multiply</option>
+          <option value="divide">divide</option>
+        </select>
 
-      <label for="math2">Enter your second number:</label>
-      <input id="math2" type="number">
-      <button type="submit">add</button>
-      <!-- <button type="subtract">subtract</button>
-      <button type="multiply">multiply</button>
-      <button type="divide">divide</button> -->
-     </form>
-    <p id="total"></p>
-    <ul id="solution"></ul>
+        <label for="math2">Enter your second number:</label>
+        <input id="math2" type="number">
+        <button class="btn-success" type="submit">add</button>
+       </form>
+       <p id="total"></p>
+       <ul id="solution"></ul>
+    </div>
+    <h3>Well look at the time! </h3>
+    <h3 id="time"></h3>
+
+    <a href="weather.html">Click for the weather...</a>
   </body>
 </html>
